@@ -17,7 +17,7 @@ $app->register(new Silex\Provider\AssetServiceProvider(), array(
     'assets.named_packages' => array(
         'css' => array('base_path' => '/assets/css'),
         'js' => array('base_path' => '/assets/js'),
-        'images' => array('base_path' => array('/assets/images')),
+        'images' => array('base_path' => '/assets/images'),
     ),
 ));
 
