@@ -9,6 +9,19 @@ $app->register(new Silex\Provider\TwigServiceProvider(), array(
 ));
 
 /**
+*	Asset
+*/
+
+$app->register(new Silex\Provider\AssetServiceProvider(), array(
+    'assets.version' => 'v1',
+    'assets.named_packages' => array(
+        'css' => array('base_path' => '/assets/css'),
+        'js' => array('base_path' => '/assets/js'),
+        'images' => array('base_path' => array('/assets/images')),
+    ),
+));
+
+/**
 *	Swiftmailer
 */ 
 
